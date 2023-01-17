@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>dashboard</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Antic&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="container">
+            <h1 class="post-title">Post your story here</h1>
+            <hr style="width: 90%;color: #7d8285;margin-top: 3%;">
+            <div class="text-title"><input type="text" class="heading" placeholder="✚ Enter you title here...✏️" style="color: var(--bs-gray-dark);font-weight: bold;"></div>
+            <div class="text-overview"><textarea class="overview" placeholder="✚ Enter your blog overview here...🔍" style="color: var(--bs-gray);"></textarea></div>
+            
+            <div class="text-image">
+                <h3>✚ Upload Blog image... 📸 </h3>
+                <div class="upload-container">
+                    <div class="wrapper">
+                       <div class="image">
+                          <img src="" alt=" ">
+                       </div>
+                       <div class="content">
+                          <div class="icon">
+                             <i class="fas fa-cloud-upload-alt"></i>
+                          </div>
+                          <div class="text">
+                             No file chosen, yet!
+                          </div>
+                       </div>
+                       <div id="cancel-btn">
+                          <i class="fas fa-times"></i>
+                       </div>
+                       <div class="file-name">
+                          File name here
+                       </div>
+                    </div>
+                    <button onclick="defaultBtnActive()" id="custom-btn">Choose a file</button>
+                    <input id="default-btn" type="file" hidden>
+                 </div>
+                 
+            </div> 
+
+            <div class="text-category">
+                <h3>✚ Add Blog Category... 📸</h3>                                
+                    <div class="select-box">
+                      <div class="options-container">
+                        <div class="option">
+                          <input
+                            type="radio"
+                            class="radio"
+                            id="automobiles"
+                            name="category"
+                          />
+                          <label for="automobiles">Automobiles</label>
+                        </div>
+              
+                        <div class="option">
+                          <input type="radio" class="radio" id="film" name="category" />
+                          <label for="film">Film & Animation</label>
+                        </div>
+              
+                        <div class="option">
+                          <input type="radio" class="radio" id="science" name="category" />
+                          <label for="science">Science & Technology</label>
+                        </div>
+              
+                        <div class="option">
+                          <input type="radio" class="radio" id="art" name="category" />
+                          <label for="art">Art</label>
+                        </div>
+              
+                        <div class="option">
+                          <input type="radio" class="radio" id="music" name="category" />
+                          <label for="music">Music</label>
+                        </div>
+              
+                        <div class="option">
+                          <input type="radio" class="radio" id="travel" name="category" />
+                          <label for="travel">Travel & Events</label>
+                        </div>
+              
+                        <div class="option">
+                          <input type="radio" class="radio" id="sports" name="category" />
+                          <label for="sports">Sports</label>
+                        </div>
+              
+                        <div class="option">
+                          <input type="radio" class="radio" id="news" name="category" />
+                          <label for="news">News & Politics</label>
+                        </div>
+              
+                        <div class="option">
+                          <input type="radio" class="radio" id="tutorials" name="category" />
+                          <label for="tutorials">Tutorials</label>
+                        </div>
+                      </div>
+              
+                      <div class="selected">
+                        Select Blog Category
+                      </div>
+                  </div>
+              
+            </div>
+            <div id="text-description" class="text-description"><textarea class="description" placeholder="✚ Enter your blog description here...📝" style="color: rgb(117,121,128);"></textarea></div>
+        </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/dropdown.js"></script>
+</body>
+
+</html>
